@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>IE Lexicostat: Head Page</title>
+</head>
+
+<body bgcolor="ffffff">
+
+<center><h3>COMPARATIVE INDOEUROPEAN DATA CORPUS,<br>
+COLLECTED BY ISIDORE DYEN</h3></center>
+
+<p>
+This is one of three hypertext pages introducing a data corpus consisting
+of lexicostatistical data on 95 Indo-European languages prepared by Prof.
+Isidore Dyen of Yale University before 1970, together with some derived
+data.  This data corpus is the basis for some<a href="PUBLICATIONS.html">
+publications,</a> which are described in a second page.  To put the
+data and these publications in context, a third page presents a brief
+history and <a href="BIBLIOG.html">bibliography</a> of comparative
+lexicostatistics.
+
+<p>
+The data corpus presented here consists of several files, described briefly
+below.  
+
+Each file consists of a text prologue followed by the data, and is
+a text file, i.e., a plain ascii file.
+
+The prologue of each file provides much more detailed information than that
+given below.  The prologue of the first file, IE-DATA1, is particularly
+important, and contains information necessary for a full understanding of
+all the other files.
+
+The groups of file descriptions are arranged in a natural order:  the files
+in each group depend on data from file(s) in some previous group but do not
+depend on data from files in subsequent groups.  Just by chance, the files
+are also in alphabetical order.
+
+<p>
+The files are accessible both by ftp, and directly from this file by clicking
+on the titles of the files (in two different places).
+
+<h3><a href="./IE-DATA1">File IE-DATA1</a></h3>
+
+<p>
+This file contains data that was placed on punched cards circa 1970,
+and transferred to disc circa 1990.  It gives cognation data among 95
+Indoeuropean speech varieties.  For each meaning in the list of 200
+basic meanings (chosen by Morris Swadesh in 1952), this file contains
+
+<blockquote>the forms used in the 95 speech varieties</blockquote>
+
+collected by Isidore Dyen and
+
+<blockquote>the cognation decisions among these forms</blockquote>
+
+made by Isidore Dyen circa 1970.  Note, however, that the speech
+forms are represented only as upper case English letters that were
+punched long ago into IBM cards, and do NOT contain the diacritical
+marks that were handwritten onto the surface of the cards.  Thus the
+cognation decisions are provided in full detail, and the forms are
+described well enough for an expert to check <i>which</i> forms were chosen,
+BUT ...
+
+<blockquote>THE FORMS ARE NOT DESCRIBED WELL ENOUGH FOR PHONOLOGICAL OR
+        PHONETIC USE!</blockquote>
+
+We hope to provide the forms in fuller detail in 1996.
+
+<p>
+The
+<a href="PUBLICATIONS.html">monograph</a> uses only 84 of the 95 speech
+varieties.  For a list of the speech varieties not used, see the end of the
+prologue.  For an explanation of why they were omitted, see both the
+prologue and the footnote on page 19 of the monograph.
+
+<h3><a href="./IE-PERC84">File IE-PERC84</a></h3>
+<h3><a href="./IE-PERC95">File IE-PERC95</a></h3>
+
+<p>
+These files contain an 84x84 and a 95x95 matrix respectively.  The 84x84
+matrix is the same as the matrix printed in Appendix A5 of the
+<a href="PUBLICATIONS.html">monograph</a>.
+
+<p>
+Each value in the matrices is the "percentage cognate", based on the data
+in IE-DATA1, between the homosemantic forms for a pair of speech
+varieties.  Each matrix is symmetric, and both halves are provided even
+though they contain the same values.  The values on the main diagonal of
+each matrix are arbitrarily given as 0.
+
+<h3><a href="./IE-RATE1">File IE-RATE1</a></h3>
+
+<p>
+This file contains substitution rates for each of the 200 Swadesh meanings in
+Indoeuropean, based on the data from IE-DATA1.  The method used and numerous
+other results can be found in <a href="PUBLICATIONS.html">Kruskal 1973</a>
+
+<p>
+The "substitution rate (for a meaning in a language family)" is the average
+number of occasions (per unit time) on which a new word displaces an old
+one as the normal way of expressing that meaning.  Most prior applications
+of glottochronology have assumed that the substitution  rate is the same
+for all meanings in the Swadesh list, despite
+<a href=BIBLIOG.html#EqSubRate>a series of papers</a> by different authors
+pointing out the inadequacy of this assumption.  The paper just cited,
+Kruskal (1973), explicitly estimates the substitution rate for each meaning
+in a Swadesh list for each of three language families, and also makes use
+of previously estimated substitution rates for 5 groups of meanings for the
+Austronesian family.
+
+<p>
+The paper just cited illustrates the use of substitution rates to
+estimate time separations among the speech varieties, and presents graphs
+to contrast the time separations estimated using individual substitution
+rates with time separations that would have been yielded by the classical
+"single substitution rate" assumption.
+
+<h3><a href="./IE-TIME84">File IE-TIME84</a></h3>
+<h3><a href="./IE-TIME95">File IE-TIME95</a></h3>
+
+<p>
+These files contain an 84x84 and a 95x95 matrix respectively.  The value in
+row <i>i</i> and column <i>j</i> of each matrix is the separation time
+between speech varieties <i>i</i> and <i>j</i>, estimated using the
+substitution rates from file IE-RATE1 and the cognations from file IE-DATA1.
+
+<h3>SOME PRACTICAL DETAILS</h3>
+
+<p>
+All the data files are in "text" format, i.e., they are plain ascii files.
+Here are the (uncompressed) sizes of the files.
+
+<pre>
+        SIZES      |              File Portion
+                   |------------------------------------------------
+                   |  Whole File  | Prologue |         Data
+                   |--------------|----------|----------------------
+        File       |   Kilobytes  |  Lines   | Lines   Words   Bytes
+        ------------------------------------------------------------
+        <a href="./IE-DATA1">IE-DATA1</a>   |    831       |  566     | 25812  109023  826750
+        <a href="./IE-PERC84">IE-PERC84</a>  |     38       |  205     |   420    7140   28980
+        <a href="./IE-PERC95">IE-PERC95</a>  |     47       |  217     |   475    9120   36955
+        <a href="./IE-RATE1">IE-RATE1</a>   |      6       |   71     |   200     695    3316
+        <a href="./IE-TIME84">IE-TIME84</a>  |     38       |  207     |   420    7140   28980
+        <a href="./IE-TIME95">IE-TIME95</a>  |     47       |  217     |   475    9120   36955
+</pre>
+
+<hr>
+This data corpus contains three hypertext explanatory pages:<br>
+--1. This page<br>
+--2. A description of some <a href="PUBLICATIONS.html">publications</a> based on the data<br>
+--3. Brief history and <a href="BIBLIOG.html">bibliography</a> of comparative lexicostatistics<br>
+<hr>
+
+<p>
+<address>Isidore Dyen, 1121 Wilder Ave, Apt 1300A, Honolulu, Hawaii 96822<br>
+Phone: 808-531-5106
+</address>
+
+<p>
+<address>
+Joseph B Kruskal, Bell Laboratories, Lucent Technologies, Murray Hill, N.J. 07974, U.S.A<br>
+Phone: 908-582-3853, Fax: 908-582-3340, 
+<a href="mailto:kruskal@research.bell-labs.com">
+kruskal@research.bell-labs.com</a>
+</address>
+
+<p>
+<address>
+Paul D Black, Faculty of Education, Northern Territory University, Darwin 0909,
+Australia<br>
+Phone: (089) 46 6133, Fax: (089) 46 6151
+<a href="mailto:blackp@ntu.edu.au">
+blackp@ntu.edu.au</a>,
+</address>
+</body>
+</html>
